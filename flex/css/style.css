@@ -4,8 +4,12 @@ h1, h2 {
 
 main {
     display: flex;
+    overflow: scroll;
     height: 100vh;  /* viewport heigth */
+    overflow-y: auto;
+    overflow-x: hidden;
     flex-direction: row;
+    flex-wrap: nowrap;
     /* align-content: center; */
     justify-content: center;
     gap: 30px;
@@ -13,17 +17,14 @@ main {
 
 .div-style {
     align-self: center;
-    width: 450px;
-    height: 450px;
+    width: 25em;
+    height: 25em;
     border: 2px solid black;
-}
-
-#div-1 {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-/* button {
+button {
     margin-top: 200px;
-} */
+}
