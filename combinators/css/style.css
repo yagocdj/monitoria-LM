@@ -1,0 +1,49 @@
+/* Combinators by MDN */
+
+/* Adjusting general settings */
+body {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.all-divs {
+    background-color: #dddddd;
+    margin: 1em;
+    padding: .5em;
+}
+
+/* Descendant combinator */
+.box p {
+    color: red;
+}
+
+/* Child combinator */
+ul > li {
+    border-top: 5px solid red;
+}
+
+/* Adjacent sibling combinator */
+
+/* adjacente (Oxford languages)
+
+1. posto ao lado de; junto, pegado.
+2. situado em local próximo; confinante, contíguo, vizinho */
+
+#adj-sibling-h1 + p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+} 
+
+/* General sibling combinator */
+#gen-sibling-h1 ~ p {
+    font-weight: bold;
+    background-color: #333;
+    color: #fff;
+    padding: .5em;
+}
+
+.cool-shadow {
+    box-shadow: #dddddd;
+}

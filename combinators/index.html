@@ -1,0 +1,61 @@
+<!-- Combinators by MDN -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Combinators</title>
+</head>
+<body>
+    
+    <!-- Descendant combinator -->
+    <div class="all-divs ">
+        <div class="box" style="background-color: #a7a7a7;"><p>Text in .box</p></div>
+        <p>Text not in .box</p>
+    </div>
+    
+    <!-- Child combinator -->
+    <div class="all-divs">
+        <ul>
+            <li>Unordered item</li>
+            <li>Unordered item
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                </ol>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Adjacent sibling combinator -->
+    <div class="all-divs">
+        <article>
+            <h1 id="adj-sibling-h1">A heading</h1>
+                <!-- <div id="test">
+                    <p>A</p>
+                </div> -->
+            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+                    melon azuki bean garlic.</p>
+            <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard
+                    greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+        </article>        
+    </div>
+    
+    <!-- General sibling combinator -->
+    <div class="all-divs">
+        <article>
+            <h1 id="gen-sibling-h1">A heading</h1>
+            <p>I am a paragraph.</p>
+            <div>I am a div</div>
+            <!-- <div id="test">
+                <p>Hello!</p>
+            </div> -->
+            <p>I am another paragraph.</p>
+            <p>Paragraph again.</p>
+        </article>        
+    </div>
+
+</body>
+</html>
